@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Merci Beaucoup!</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      background: #1a1a1a; /* dark background */
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* keeps croissant inside screen */
+      color: #f5f2e7; /* warm cream text */
+    }
+
+    .thankyou-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #f5f2e7; /* warm cream */
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #d1c7b7; /* muted café beige */
+    }
+
+    .btn {
+      margin-top: 2rem;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      background: #8b5e3c; /* coffee brown */
+      color: #fffaf3;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #6a4427;
+    }
+
+    /* Croissant Animation */
+    .croissant {
+      position: absolute;
+      top: 50%;
+      left: -150px; /* start off-screen */
+      width: 100px;
+      animation: flyAcross 6s linear infinite;
+    }
+
+    @keyframes flyAcross {
+      from {
+        transform: translateY(-50%) translateX(0) rotate(0deg);
+      }
+      to {
+        transform: translateY(-50%) translateX(110vw) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="thankyou-container">
+    <h1>☕ Merci Beaucoup!</h1>
+    <p>Thank you for contacting <strong>Louvre & Latte</strong>. We’ll get back to you soon.</p>
+    <a href="index.html" class="btn">Back to Home</a>
+  </div>
+
+  <!-- Croissant PNG animation -->
+  <img src="assets/crossaintfly.png" alt="Flying Croissant" class="croissant">
+</body>
+</html>
