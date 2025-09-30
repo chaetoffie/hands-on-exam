@@ -135,37 +135,6 @@ nav a:hover::after {
   color: var(--accent-color);
 }
 
-/* Filters */
-.menu-filters {
-  display: flex; 
-  justify-content: center; 
-  gap: 1.4rem;
-  margin-bottom: 2rem; 
-  flex-wrap: wrap;
-}
-
-.filter-btn {
-  font: 500 0.95rem var(--body-font);
-  padding: .55rem .95rem;
-  border:1px solid var(--accent-color);
-  background: transparent; 
-  color: var(--primary-color);
-  border-radius: 999px; 
-  cursor: pointer;
-  transition: all .25s ease;
-}
-
-.filter-btn:hover { 
-  background: var(--accent-color); 
-  color: #1a1a1a; 
-  transform: translateY(-2px); 
-}
-
-.filter-btn.active { 
-  background: var(--secondary-color); 
-  color: var(--primary-color); 
-  border-color: var(--secondary-color); 
-}
 
 /* Menu grid */
 .menu-grid {

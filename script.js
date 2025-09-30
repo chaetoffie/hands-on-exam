@@ -28,25 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
   setNavStyle();
   window.addEventListener('scroll', setNavStyle, { passive: true });
 
-  /* Menu Filters */
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const menuItems = document.querySelectorAll('.menu-item');
-
-  filterButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterButtons.forEach(b => {
-        b.classList.remove('active');
-        b.setAttribute('aria-selected', 'false');
-      });
-      btn.classList.add('active');
-      btn.setAttribute('aria-selected', 'true');
-
-      const filter = btn.dataset.filter;
-      menuItems.forEach(item => {
-        item.style.display = (filter === 'all' || item.dataset.category === filter) ? 'flex' : 'none';
-      });
-    });
-  });
 
   /* Cart State */
   const cart = [];
